@@ -17,13 +17,4 @@ you can run, for example,
 
 **qsub -v model=model1,out_dir=my_output job.pbs**
 
-Once the s-process output is computed (in the above, the file would be
-*output/model1/s-process/out.xml*), you can compute the abundances averaged
-over an exponential distribution of exposures with average exposure
-*&tau;<sub>0</sub>*.  To do so for *&tau;<sub>0</sub> = 0.3*, type,
-
-**python3 input/python/s-proc_average.py output/model1/s-process/out.xml 0.3 output/model1/s-process/exp_tau.xml**
-
-The last command line entry is the resultant output file.
-
 Of course you can edit the scripts according to your purposes.
